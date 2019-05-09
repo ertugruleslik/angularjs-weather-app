@@ -13,12 +13,12 @@ app.config(['$stateProvider','$urlRouterProvider','$locationProvider', function 
    $stateProvider
        .state('home', {
            url: '/',
-           templateUrl: './assets/Views/home.html',
+           templateUrl: './assets/views/home.html',
            controller: 'mainCtrl'
        })
        .state('main', {
            url: '/:id',
-           templateUrl: './assets/Views/home.html',
+           templateUrl: './assets/views/home.html',
            controller: 'mainCtrl',
            params: {
                id:{
@@ -33,7 +33,7 @@ app.config(['$stateProvider','$urlRouterProvider','$locationProvider', function 
        })
         .state('list', {
             url: '/list',
-            templateUrl: './assets/Views/cityList.html',
+            templateUrl: './assets/views/cityList.html',
             controller: 'listCtrl'
         });
 
