@@ -1,0 +1,44 @@
+.weather-list {
+    margin-top: 15px;
+
+    &-cities {
+        margin-top: 16px;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+
+        li {
+
+            a {
+                @include flex;
+                @include justify-content(space-between);
+                @include align-items(center);
+                width: 100%;
+                padding: 8px 20px;
+                color: #333;
+                @include font-size(15px);
+                font-weight: 500;
+                border-bottom: 1px solid #f3f3f3;
+
+                &:hover {
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+                    background: #f9f9f9;
+                }
+
+                .icon {
+                    @include font-size(30px);
+                    
+                    &:before {
+                        float: left;
+                    }
+                }
+
+                .degree {
+                    display: inline-block;
+                    width: 80px;
+                    font-weight: 400;
+                    @include font-size(14px);
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

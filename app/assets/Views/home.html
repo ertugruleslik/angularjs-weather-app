@@ -1,0 +1,30 @@
+<section>
+    <div class="weather-buttons">
+        <a ui-sref="list" class="btn right">Select City</a>
+    </div>
+
+    <div class="weather-box cloudy-bg" ng-class="setBackground(weather.weather[0].icon)">
+        <div class="weather-box-header">
+            <span ng-class="setClass(weather.weather[0].icon)"></span>
+            <div class="weather-box-name">{{weather.name}}</div>
+            <div class="weather-box-degree">{{ weather.main.temp-273 | number: 0 }}<span>°C</span></div>
+        </div>
+
+        <span class="weather-box-date">{{ (weather.dt * 1000) | date: 'EEE, MMM d' }}</span>
+        <span class="weather-box-description">{{ weather.weather[0].description }}</span>
+
+        <div class="weather-box-details">
+            <div class="weather-box-detail">
+                <span>Wind speed: <strong>{{ weather.wind.speed }} m/s</strong></span>
+                <span>Hum: <strong>{{ weather.main.humidity }}%</strong></span>
+            </div>
+
+            <div class="weather-box-detail">
+                <span>Sunrise: <strong>{{ weather.sys.sunrise * 1000 | date : 'shortTime' }}</strong></span>
+                <span>Sunset: <strong>{{ weather.sys.sunset * 1000 | date : 'shortTime' }}</strong></span>
+            </div>
+        </div>
+
+
+    </div>
+</section>

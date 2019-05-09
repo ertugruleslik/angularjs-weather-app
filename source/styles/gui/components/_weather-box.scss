@@ -1,0 +1,111 @@
+.weather {
+    width: 500px;
+    margin: 40px auto 0;
+
+    @media screen and (max-width: 500px){
+        width: 100%;
+    }
+
+    &-buttons {
+        display: inline-block;
+        width: 100%;
+    }
+
+    &-box {
+        margin-top: 15px;
+        padding: 35px;
+        color: #fff;
+        background: #666;
+        box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+        overflow: hidden;
+
+        &-header {
+            margin-bottom: 30px;
+
+            .icon {
+                @include font-size(90px);
+                float: right;
+                margin: 0 10px 0 0;
+            }
+        }
+
+        &.day-clear {
+            @include prefixer("background","linear-gradient(to bottom, #EA8E07, #F3C302)");
+        }
+
+        &.night-clear {
+            @include prefixer("background","linear-gradient(to bottom, #003B94, #003641)");
+        }
+
+        &.cloudy {
+            @include prefixer("background","linear-gradient(to bottom, #3394CC, #6DD7D6)");
+        }
+
+        &.night-cloudy {
+            @include prefixer("background","linear-gradient(to bottom, #1c577d, #6DD5FA)");
+        }
+
+        &.rainy {
+            @include prefixer("background","linear-gradient(to bottom, #6592A7, #44AFA1)");
+        }
+
+        &.thunderstorm {
+            @include prefixer("background","linear-gradient(to bottom, #0B67C5, #613B79)");
+        }
+
+        &.snowy {
+            @include prefixer("background","linear-gradient(to bottom, #62A1FF, #88C8C5)");
+        }
+
+        &.foggy {
+            @include prefixer("background","linear-gradient(to bottom, #8AA2C6, #69A6B3)");
+        }
+
+        &-name {
+            @include font-size(24px);
+            font-weight: 300;
+        }
+
+        &-degree {
+            @include font-size(55px);
+            font-weight: 400;
+        }
+
+        &-date {
+            display: inline-block;
+            width: 100%;
+            @include font-size(14px);
+            font-weight: 500;
+        }
+
+        &-description {
+            @include font-size(26px);
+            font-weight: 300;
+            text-transform: capitalize;
+        }
+
+        &-details {
+            @include flex;
+            @include justify-content(space-between);
+            width: 100%;
+            margin-top: 35px;
+        }
+
+        &-detail {
+            @include flex;
+            @include flex-direction(column);
+            width: 100%;
+
+            span {
+                margin-bottom: 7px;
+                font-weight: 300;
+            }
+
+            strong {
+                font-weight: 500;
+            }
+        }
+    }
+}
+

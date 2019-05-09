@@ -1,0 +1,22 @@
+{
+  "name": "angularjs-weather-app",
+  "description": "Angularjs Weather App",
+  "main": "app/index.html",
+  "license": "ISC",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.7.8",
+    "angular-ui-router": "^1.0.22",
+    "angular-resource": "^1.7.8",
+    "caffeine": "latest",
+    "melange": "latest"
+  }
+}

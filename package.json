@@ -1,0 +1,43 @@
+{
+  "name": "angularjs-weather-app",
+  "version": "1.0.0",
+  "description": "Angularjs Weather App",
+  "main": "app/index.html",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ertugruleslik/angularjs-weather-app.git"
+  },
+  "contributors": [],
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-consolidate": "latest",
+    "gulp-data": "latest",
+    "gulp-declare": "latest",
+    "gulp-eslint": "latest",
+    "gulp-header": "latest",
+    "gulp-iconfont": "^10.0.2",
+    "gulp-imagemin": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-notify": "latest",
+    "gulp-nunjucks-render": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-lint": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-stylelint": "latest",
+    "gulp-uglify": "latest",
+    "gulp-wrap": "latest",
+    "http-proxy-middleware": "^0.19.1",
+    "load-data": "latest",
+    "load-gulp-tasks": "latest",
+    "lodash": "latest",
+    "stylelint-order": "latest"
+  },
+  "preferGlobal": true
+}

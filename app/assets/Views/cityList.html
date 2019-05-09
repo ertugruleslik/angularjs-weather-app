@@ -1,0 +1,21 @@
+<section>
+    <div class="weather-buttons">
+        <a ui-sref="home" class="btn">Back</a>
+    </div>
+
+    <div class="weather-list">
+        <input type="text" class="search" ng-model="cityName" placeholder="City Search">
+        <ul class="weather-list-cities">
+            <li ng-repeat="city in cities.list | filter:cityName">
+                <a ui-sref="main({id: '{{ city.name }}',ci: '{{ city.id }}' })">
+                    <div class="weather-list-title">{{city.name}}</div>
+                    <div class="weather-list-degree">
+                        <span ng-class="setClass(city.weather[0].icon)"></span>
+                        <span class="degree">{{ city.main.temp-273.15 | number: 0 }}<span>°C</span></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</section>
